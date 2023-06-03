@@ -28,15 +28,18 @@ function pageTrans()
         const id = e.target.dataset.id; //targets the data-id of the clicked section
         if(id)
         {
-            //shifts the active mode to selected section
-            
-
+            //remove selection from other btns
+            sectBtns.forEach((btn) => {
+                btn.classList.remove('active')
+            })
+            e.target.classList.add('active');
             //hiding other sections
             sections.forEach((section) => {
                 section.classList.remove('active')
             })
 
             const element = document.getElementById(id);
+            element.classList.add('active');
         }
     })
 }
