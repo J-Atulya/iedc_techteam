@@ -4,7 +4,7 @@ const sectBtns = document.querySelectorAll('.controlls');
 // all buttons
 const sectBtn = document.querySelectorAll('.control');
 // active btn
-const allSelect = document.querySelectorAll('.main-cont');
+const allSection = document.querySelectorAll('.main-cont');
 // full body content
 
 function pageTrans()
@@ -16,14 +16,29 @@ function pageTrans()
             currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
             this.className += ' active-btn';
         })
+        /* for loop access any element in the sectBtn
+            when a button is clicked, an event listener is added and perfomrs the code
+            the one with active-btn class is linked to currentBtn
+            the active-btn class is removed from it by replacing its name with ''
+            then to the clicked button, name of 'active-btn' class is added
+        */
     }
+
+    allSection[0].addEventListener('click', (e) => {
+        const id = e.target.dataset.id; //targets the data-id of the clicked section
+        if(id)
+        {
+            //shifts the active mode to selected section
+            
+
+            //hiding other sections
+            sections.forEach((section) => {
+                section.classList.remove('active')
+            })
+
+            const element = document.getElementById(id);
+        }
+    })
 }
-/* 
-  for loop access any element in the sectBtn
-  when a button is clicked, an event listener is added and perfomrs the code
-  the one with active-btn class is linked to currentBtn
-  the active-btn class is removed from it by replacing its name with ''
-  then to the clicked button, name of 'active-btn' class is added
-*/
 
 pageTrans();
