@@ -114,5 +114,12 @@ section{
     justify-content: center;
     margin: .7em 0;
     box-shadow: var(--box-shadow-1);
+
+}
+/* icon features */
+i{
+    font-size: 1.2rem;
+    color: var(--color-white);
+    pointer-events: none;
 }
 
