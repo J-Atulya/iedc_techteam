@@ -213,7 +213,7 @@ section{
     .ryt-ctn
     {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem;
 
         .abt-item
@@ -289,6 +289,121 @@ section{
 
         }
 
+    }
+}
+
+.abt-stats{
+    padding-bottom: 4rem ;
+
+    .progress-bars
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+
+        .progress-bar
+        {
+            display: flex;
+            flex-direction: column;
+
+            .prog-title
+            {
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+
+            .prog-cont
+            {
+                display: flex;
+                align-items: center;
+
+                .prog-text
+                {
+                    color: var(--color-grey-2);
+                }
+                
+                .progress
+                {
+                    width: 100%;
+                    height: .45rem;
+                    background-color: var(--color-grey-4);
+                    margin-left: 1rem;
+                    position: relative;                              
+                    
+                    .html
+                    {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        height: 100%;
+                        background-color: var(--color-secondary);
+                        transition: all .4s ease-in-out ;
+                        width: 50%;
+                    }
+                    .css
+                    {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        height: 100%;
+                        background-color: var(--color-secondary);
+                        transition: all .4s ease-in-out ;
+                        width: 40%;
+                    }
+                    .c
+                    {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        height: 100%;
+                        background-color: var(--color-secondary);
+                        transition: all .4s ease-in-out ;
+                        width: 55%;
+                    }
+                    .python
+                    {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        height: 100%;
+                        background-color: var(--color-secondary);
+                        transition: all .4s ease-in-out ;
+                        width: 50%;
+                    }
+                    .java
+                    {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        height: 100%;
+                        background-color: var(--color-secondary);
+                        transition: all .4s ease-in-out ;
+                        width: 40%;
+                    }
+                    .django
+                    {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        height: 100%;
+                        background-color: var(--color-secondary);
+                        transition: all .4s ease-in-out ;
+                        width: 10%;
+                    }
+                    .cpp
+                    {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        height: 100%;
+                        background-color: var(--color-secondary);
+                        transition: all .4s ease-in-out ;
+                        width: 20%;
+                    }
+                    
+                }
+            }
+        }
     }
 }
 
