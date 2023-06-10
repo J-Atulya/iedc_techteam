@@ -84,10 +84,7 @@ section{
     display: none; 
     transform: translateY(0) scale(1);
 }
-.sec5{
-    display: none; 
-    transform: translateY(0) scale(1);
-}
+
 
 @keyframes scaleAnim 
 {
@@ -466,6 +463,94 @@ section{
 
 }
 
+/* portfolio*/
+.port-text{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.portfolios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+
+    .port-item
+    {
+        position: relative;
+        
+        .img
+        {
+            
+            width: 75%;
+            height: 300px;
+            object-fit: fill;
+            border-radius: 20px;
+        }
+
+        .hover-item
+        {
+            width: 75%;
+            height: 100%;
+            position: absolute;
+            background-color: var(--color-secondary);
+            top: 0;
+            bottom: 0;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transform: scale(0);
+            transition: all .4s ease-in-out;
+
+            .icons
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .icon
+                {
+                    background-color: var(--color-grey-6);
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 1rem;
+                    cursor: pointer;
+                    transition: all .4s ease-in-out;
+
+                    .i
+                    {
+                        font-size: 1.7rem;
+                        color: var(--color-grey0);
+                        margin: 0 1rem;
+                    }
+
+                    &:hover
+                    {
+                        background-color: var(--color-grey0);
+                        .i
+                        {
+                            color: var(--color-primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* this means that when cursor hovers over the image(port-item), the thing that
+should hover effects is the .hover-item specified in that div-> we make opacity 1 */
+.port-item:hover .hover-item
+{
+    opacity: 1;
+    transform: scale(1);
+} 
 /* independent button */
 .span1{
     color: var(--color-secondary);
@@ -553,6 +638,7 @@ section{
     &::before
     {
         content: '';
+        position: absolute;
         left: 50%;
         top: 0;
         right: 0;
