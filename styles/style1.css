@@ -194,8 +194,9 @@ section{
     }
 }
 .abt-ctn{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    
+    display: inline;
+    /*grid-template-columns: repeat(2, 1fr);*/
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
 
@@ -751,5 +752,31 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
     }
 }
 
+.theme-btn
+{
+    top:5%;
+    right: 3%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--color-grey-4);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,.2);
+    transition: all .1s ease-in-out;
+
+    &:active
+    {
+        transform: translateY(-3px);
+    }
+    i{
+        font-size: 1.4rem;
+        color: var(--color-grey-2);
+        pointer-events: none;
+    }
+}
 
 
