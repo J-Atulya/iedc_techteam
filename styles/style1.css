@@ -754,14 +754,14 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
 
 .theme-btn
 {
-    top:5%;
+    top: 5%;
     right: 3%;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     cursor: pointer;
-    background-color: var(--color-grey-4);
-    position: fixed;
+    background-color: var(--color-grey-5);
+    position: fixed ;
     display: flex;
     justify-content: center;
     align-items: center;
