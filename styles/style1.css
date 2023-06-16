@@ -566,20 +566,24 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
                 margin: .3rem 0;
                 padding: 0;
             }
-            .icon{
+            .icon1
+            {
                 display: grid;
                 grid-template-columns: 40px 1fr;
             }
+
         }
     }
     .right-contact
     {
-        flex: 3;
+        /*display: flex;
+        flex-direction: column; */
+        flex : 3; 
         margin-left: 3rem;
         .input-control
         {
             margin: 1.5rem 0;           
-            .input
+            .inp
             {
                 border-radius: 30px;
                 font-weight: inherit;
@@ -588,24 +592,19 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
                 padding: .8rem 1.1rem;
                 outline: none;
                 border: none;
-                background-color: var(--color-grey-5); 
+                background-color: var(--color-grey-1); 
                 resize: none;
             }  
-            .icon1
-            {
-                display: grid;
-                grid-template-columns: 40px 1fr;
-            }
-
+            
         }
-        .i-c-2
+        /*.i-c-2
         {
            display: flex;
            :last-child
            {
              margin-left: 1.5rem;
            }     
-        }
+        }*/
 
         .submit-btn /* to align the download resume container to proper size*/
         {
