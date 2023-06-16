@@ -181,13 +181,13 @@ section{
             width: 60%;
             margin-left: 4rem;
             background-color: var(--color-black);
+            justify-content: center;
             transition: all .4s ease-in-out;  
             .imghead
             {
                 width: 100%;
                 height: 100%;
                 object-fit:contain;
-                align-items: center;
                 transition: all .4s ease-in-out;                
             }  
         }  

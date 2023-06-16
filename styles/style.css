@@ -490,9 +490,9 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
   /* display: flex; */
   padding-top: 3.5rem;
 }
-.contact-content-cont .left-contact {
-  /*flex: ;*/
-}
+/*.contact-content-cont .left-contact {
+  flex: ;*/
+
 .contact-content-cont .left-contact .h41 {
   margin-top: 1rem;
   font-size: 2rem;
