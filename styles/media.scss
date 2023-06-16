@@ -72,10 +72,14 @@
         padding-bottom: 6rem;
         margin-right: 2rem;
         .port-item{
-         .img, .hover-item{
-            width: 50%;
-            height: 200px;
-         }
+            .img{
+                width: 50%;
+                height: 200px;
+            }
+            .hover-item{
+                width: 50%;
+                height: 200px;
+            }
         }
 
     }
