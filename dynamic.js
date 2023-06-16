@@ -42,6 +42,13 @@ function pageTrans()
             element.classList.add('active');
         }
     })
+
+    //toggle theme
+    const themeBtn = document.querySelector('.theme-btn');
+    themeBtn.addEventListener('click', () =>{
+        let ele = document.body;
+        ele.classList.toggle('light-mode')
+    })
 }
 
 pageTrans();
