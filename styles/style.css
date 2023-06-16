@@ -258,9 +258,9 @@ section {
   height: 1px;
   background-color: var(--color-grey-5);
 }
-.abt-ctn .left-ctn {
-  /*padding-right: 5rem;*/
-}
+/*.abt-ctn .left-ctn {
+  padding-right: 5rem;
+}*/
 .abt-ctn .left-ctn .lft {
   line-height: 2rem;
   /*padding: 1rem;*/

@@ -161,6 +161,7 @@ section{
         display: flex;
         align-items: center;
         position: relative;
+        height: 100%;
         .h-shape
         {
             transition: all .4s ease-in-out;
@@ -172,7 +173,6 @@ section{
             left: 0;
             z-index: -1; /* gets behind the image */
             clip-path: polygon(0 0, 30% 0, 100% 100%, 0% 100%);
-
         }
         .image
         {
