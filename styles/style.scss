@@ -60,7 +60,7 @@ a{
 }
 /* vh -> viewport height or the height of the browser */
 header{
-    min-height: 100vh;
+    height: 100vh;
     color: var(--color-white);
     overflow: hidden;
 }
@@ -215,7 +215,6 @@ section{
     /*grid-template-columns: repeat(2, 1fr);*/
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
-
     .ryt-ctn
     {
         display: grid;
@@ -275,20 +274,20 @@ section{
     }
     .left-ctn
     {
-        padding-right: 5rem;
+        /*padding-right: 5rem;*/
         
         .lft
         {
             line-height: 2rem;
-            padding: 1rem;
+            /*padding: 1rem;*/
             color: var(--color-grey-1);
+            justify-content: center;
         }
 
         .h4
         {
             font-size: 2rem;
             text-transform: uppercase;
-
         }
 
     }
@@ -732,18 +731,7 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
         font-size: 4rem;
         font-weight: 700;   
     }
-    .bg-txt
-    {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        color: var(--color-grey-5);
-        transition: all .4s ease-in-out;
-        z-index: -1;
-        transform: translate(-50%, -50%);
-        font-weight: 800;
-        font-size: 5.7rem;
-    }    
+     
 }
 .stat-title{
 

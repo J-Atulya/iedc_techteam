@@ -64,7 +64,7 @@ a {
 
 /* vh -> viewport height or the height of the browser */
 header {
-  min-height: 100vh;
+  height: 100vh;
   color: var(--color-white);
   overflow: hidden;
 }
@@ -259,12 +259,13 @@ section {
   background-color: var(--color-grey-5);
 }
 .abt-ctn .left-ctn {
-  padding-right: 5rem;
+  /*padding-right: 5rem;*/
 }
 .abt-ctn .left-ctn .lft {
   line-height: 2rem;
-  padding: 1rem;
+  /*padding: 1rem;*/
   color: var(--color-grey-1);
+  justify-content: center;
 }
 .abt-ctn .left-ctn .h4 {
   font-size: 2rem;
@@ -639,17 +640,6 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
   font-size: 4rem;
   font-weight: 700;
 }
-.main-title .bg-txt {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: var(--color-grey-5);
-  transition: all 0.4s ease-in-out;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  font-weight: 800;
-  font-size: 5.7rem;
-}
 
 .stat-title {
   text-transform: uppercase;
@@ -749,11 +739,28 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
   .abt-ctn .left-ctn .lft {
     padding-left: 0;
   }
+  .portfolios {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
   .timeline {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
+  .abt-stats .progress-bars {
+    grid-template-columns: 1fr;
+  }
   .section {
     padding: 2rem 2.5rem !important;
+  }
+  .contact-content-cont .right-contact {
+    margin: 0;
+    margin-top: 2.5rem;
+  }
+  .main-title .h2 {
+    font-size: 2rem;
+  }
+  .main-title .h2 span1 {
+    font-size: 2.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
