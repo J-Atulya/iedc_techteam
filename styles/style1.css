@@ -9,7 +9,7 @@
     --color-primary: #191d2b;
     --color-secondary: #28be28;
     --color-black: #000000;
-    --color-white: #ffffff;
+    --color-white: #f8e8e8;
     --color-grey0: #f8f8f8;
     --color-grey-1: #dbe1e8;
     --color-grey-2: #b2becd;
@@ -17,6 +17,21 @@
     --color-grey-4: #454e56;
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
+    --br-sm-2: 14px;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+}
+.light-mode{
+    --color-primary: #fcf5f5;
+    --color-secondary: #f56692;
+    --color-black: #454e56;
+    --color-white: #000000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #44233a;
+    --color-grey-2: #6c284f;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #edc4de;
+    --color-grey-6: #d7dcde;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
@@ -567,10 +582,9 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
             {
                 margin-left: 5rem;
             }
-            .p2 
+            .p5 
             {
                 margin-left: 6.6rem;
-                color: var(--color-grey0);
             }
             .p3 
             {
@@ -755,12 +769,12 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
 .theme-btn
 {
     top: 5%;
-    right: 3%;
+    right: 2.8%;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     cursor: pointer;
-    background-color: var(--color-grey-5);
+    background-color: var(--color-black);
     position: fixed ;
     display: flex;
     justify-content: center;
