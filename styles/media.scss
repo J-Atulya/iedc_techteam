@@ -5,9 +5,16 @@
         padding: 0;       
     }
     .right-head{
-        padding-right: 2rem !important;
+        padding: 2rem !important;
     }
-
+    .theme-btn{
+        width: 50px;
+        height: 50px;
+    }
+    .head-cont
+    {
+        grid-template-columns: 1fr;
+    }
     .controlls{
         top: auto;
         bottom: 0;
