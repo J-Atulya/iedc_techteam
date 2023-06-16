@@ -2,15 +2,18 @@
   header {
     padding: 0;
   }
-  .right-head {
-    padding: 2rem !important;
-  }
-  .theme-btn {
-    width: 50px;
-    height: 50px;
-  }
   .head-cont {
     grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .right-head {
+    padding: 2rem !important;
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-head .name {
+    font-size: 2.5rem !important;
   }
   .controlls {
     top: auto;
@@ -25,5 +28,36 @@
   }
   .controlls .control {
     margin: 1rem 0.3rem;
+  }
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .left-head .h-shape {
+    display: none;
+  }
+  .left-head .img {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .abt-ctn {
+    grid-template-columns: 1fr;
+  }
+  .abt-ctn .ryt-ctn {
+    grid-template-columns: 1fr;
+    padding-top: 2.5rem;
+  }
+  .abt-ctn .left-ctn {
+    padding-right: 0;
+  }
+  .abt-ctn .left-ctn .lft {
+    padding-left: 0;
+  }
+  .timeline {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .section {
+    padding: 2rem 2.5rem !important;
   }
 }/*# sourceMappingURL=media.css.map */
