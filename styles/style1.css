@@ -535,12 +535,12 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
 } 
 /* contact */
 .contact-content-cont{
-    display: flex;
+   /* display: flex; */
     padding-top: 3.5rem;
     
     .left-contact
     {
-        flex: 2;
+        /*flex: ;*/
         .h41
         {
             margin-top: 1rem;
@@ -549,7 +549,7 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
         }
         .p2 
         {
-            margin: 1rem;
+            margin: 1rem 0;
             line-height: 2rem;
             color: var(--color-grey-2);
         }
@@ -560,26 +560,71 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                margin-bottom: 10px;
             }
             .p1 
             {
-                margin: .3rem 0;
-                padding: 0;
+                margin-left: 5rem;
+            }
+            .p2 
+            {
+                margin-left: 6.6rem;
+                color: var(--color-grey0);
+            }
+            .p3 
+            {
+                margin-left: 4rem;
+            }
+            .p4 
+            {
+                margin-left: 3.5rem;
             }
             .icon1
             {
                 display: grid;
                 grid-template-columns: 40px 1fr;
+                /*.i2
+                {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.3rem;
+                }*/
             }
+        }
+        .contact-icon
+        {
+            display: flex;
+            margin-top: 2rem;
+            .a1
+            {
+                display: flex;
+                align-items: center;
+                color: var(--color-white);
+                background-color: var(--color-grey-5);
+                cursor: pointer;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin: 0rem .4rem;
+                transition: all .4s ease-in-out;
 
+                &:hover
+                {
+                    background-color: var(--color-secondary);
+
+
+                }
+
+            }
         }
     }
     .right-contact
     {
         /*display: flex;
         flex-direction: column; */
-        flex : 3; 
         margin-left: 3rem;
+        align-items: center;
         .input-control
         {
             margin: 1.5rem 0;           
@@ -592,28 +637,22 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
                 padding: .8rem 1.1rem;
                 outline: none;
                 border: none;
-                background-color: var(--color-grey-1); 
+                background-color: var(--color-grey-5); 
+                width: 80%;
+                color: var(--color-white);
                 resize: none;
             }  
             
         }
-        /*.i-c-2
-        {
-           display: flex;
-           :last-child
-           {
-             margin-left: 1.5rem;
-           }     
-        }*/
-
+        
         .submit-btn /* to align the download resume container to proper size*/
         {
             display: flex;
             justify-content: flex-start;
-            .icon
+            /*.icon
             {
                 display: grid;
-            }
+            }*/
         }
     }
 }
