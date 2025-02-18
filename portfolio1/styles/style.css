@@ -763,4 +763,28 @@ should hover effects is the .hover-item specified in that div-> we make opacity 
   .main-title .h2 span1 {
     font-size: 2.5rem;
   }
+  .languages {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.languages ul {
+    padding-left: 20px;
+}
+
+.languages li {
+    margin-bottom: 5px;
+}
+
+.languages i {
+    margin-right: 8px;
+    color: #333;
+    font-size: 16px;  /* Adjust the size of the icons */
+}
+
+.languages strong {
+    font-weight: bold;
+    color: #444;
+}
 }/*# sourceMappingURL=style.css.map */
